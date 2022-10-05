@@ -1,0 +1,31 @@
+#counter{
+      background: linear-gradient(to left,#0d1206e3,#0c050385),url(../images/counter.jpg) no-repeat center / cover;
+      padding: 60px 0;
+      clip-path: polygon(0 16%, 100% 0, 100% 81%, 0% 100%);
+     
+}
+.counter-details {
+      transform: rotate(-2deg);
+    }
+.counter_item{
+      border: 1px solid #ffff;
+      padding: 20px 0 30px 0;
+      transform: skew(-4deg);
+      .counter_content{
+            transform: skew(4deg);
+      }
+      span{
+            @include heading_three;
+            color: $color_white;
+      }
+      h4{
+            @include heading_four;
+            color: $color_white;   
+      }
+}
+
+
+
+
+
+

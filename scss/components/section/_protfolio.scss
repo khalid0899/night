@@ -1,0 +1,29 @@
+#protfolio{
+      background:linear-gradient(to left, #080809, #080809b8),url("../images/protfolio.jpg") no-repeat center / cover;
+      padding: 90px 0;
+      clip-path: polygon(0 10%, 100% 0, 100% 93%, 0% 100%);
+}
+.protfolio_heading{
+      h2{
+      
+          @include heading_two;
+          color: $color_white; 
+      }
+      p{
+            @include paragraph;
+            margin-top: 10px;
+      }
+}
+.protfolio_gallery{
+      overflow: hidden;
+      margin-top: 40px;
+      .protfolio_item{
+            overflow: hidden;
+            margin-top: 10px;
+            &:hover img{
+                  transform: scale(1.5) rotate(15deg);
+                  transition: .5s; 
+                  transition-delay: .3s;
+            }
+      }
+}

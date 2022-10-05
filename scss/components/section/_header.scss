@@ -1,0 +1,36 @@
+.menu_bg{
+      width: 100%;
+      z-index: 999;
+      position: absolute;
+      background:$footer_bg;
+      border-bottom:2px solid $after_bg ;
+      ul li a{
+            color:$color_white !important;
+            transition: .5s;
+            &:hover{
+                  color: $li_hover !important;
+            } 
+      }
+     li{
+      padding: 10px;
+      position: relative;
+      &::after{
+            position: absolute;
+            height: 2px;
+            background: $after_bg;
+            left: 19px;
+            bottom: -8px;
+            content: "";
+            width: 0;
+            opacity: 0;
+            transition: .5s;
+      }
+      &:hover::after{
+            width: calc(100% - 36px);
+       opacity: 1;
+      }
+     }
+     ul li:last-child{
+      padding-right: 0;
+     }    
+}

@@ -1,0 +1,94 @@
+#pricing{
+      padding: 0 0 40px 0;
+}
+
+.pricing_heading{
+      h2{
+            @include heading_three;
+            color: $color-black;
+      }
+      p{
+            @include paragraph;
+            color: $color-black;
+            margin-top: 10px;
+      }
+}
+.pricing_discribe{
+      margin-top: 50px;
+}
+.pricing_item{
+      background: $teamIteam_bg;
+      position: relative;
+      transition: .5s;
+      .pacage_name{
+            background: $pageName_bg;
+            clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+            @include heading_three;
+            color: $color_white;
+            padding: 30px 0;
+            h4{
+                 padding-bottom: 80px;
+            }
+
+}
+.per_month{
+      position: relative;
+      position: absolute;
+      height: 142px;
+      width: 142px;
+      background:$pageName_bg;
+      border-radius: 50%;
+      padding: 35px 0;
+      left: 32%;
+      top: 16%;
+      h3{
+            @include heading_three;
+            color: $color_white;
+      }
+      p{
+            font-size: 16px;
+            color: #fff;
+            margin-top: 5px;
+      }
+      &::after{
+            position: absolute;
+            height: 160px;
+            width: 160px;
+            top: -10px;
+            left: -10px;
+            border: 3px solid $pageName_bg;
+            content: "";
+            border-radius: 50%; 
+      }
+      &::before{
+            position: absolute;
+            height: 155px;
+            width: 155px;
+            top: -7px;
+            left: -7px;
+            border: 10px solid #ffff;
+            content: "";
+            border-radius: 50%;  
+      }
+}
+.work_items{
+      margin-top: 100px;
+      li{
+            display: block;
+            font-size: 18px;
+            margin-bottom: 17px;
+      }
+}
+.join_now{
+      padding: 40px 0;
+      background: $pageName_bg;
+      clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+      a{
+            color: $color_white;
+            font-size: 18px;
+      }
+}
+&:hover .pacage_name,&:hover .join_now,&:hover .per_month{
+background: $hover_bg;
+}
+}

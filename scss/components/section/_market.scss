@@ -1,0 +1,32 @@
+
+/* start market style
+   ************************/
+   #market_palce{
+      background:$maketPlace_bg;
+      clip-path: polygon(0 27%, 100% 6%, 100% 80%, 0% 100%);
+      padding: 80px 0 53px 0;
+}
+.market_part {
+      display: flex;
+      justify-content: space-between;
+      transform: rotate(-2.3deg);
+      .slick-center .market_item{
+            border: 1px solid $hover_bg ;
+            transform: skew(-6deg);
+          }
+    }
+    #market_palce .slick-slide{
+      padding: 0 12px;
+  } 
+.market_item{
+      border: 1px solid #cccccc;
+      padding: 34px 0;
+      transform: skew(-6deg);
+      img{
+            margin-left: 30px;
+            transform: skew(-6deg);
+      }
+}
+/* end market style
+   ************************/
+

@@ -1,0 +1,205 @@
+#about{
+      margin-top: -30px;
+//      padding: 0 0 20px 0;
+}
+.about_heading{
+      h2{
+           @include heading_two;
+           color: $color-black;
+           
+      }
+      p{
+            @include paragraph;
+            color: $color-black;
+            margin-top: 10px;
+      }
+}
+.who_weAre,.we_do,.we_can,.choose_me{
+      margin-top: 20px;
+      background: $about_item;
+      @include about_item;
+      h5{
+            @include heading_five
+      }
+      p{
+            @include paragraph;
+            font-size: 16.6px;
+            color: $color-black;
+            margin-top: 10px;
+      }
+   
+    
+}
+.who_weAre{
+      margin-top: 50px;
+      position: relative;
+      transition: .5s;
+      &::before{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background:#353535 ;
+            left: 48%;
+            bottom: -52px;
+            content: "";
+      }
+      &::after{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background:#eeeeee ;
+            left: 47.4%;
+            bottom: -12px;
+            content: "";
+            transform: rotate(45deg);
+      }
+      &:hover:before{
+            background: $hover_bg;
+           }
+           &:hover{
+            box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+      -webkit-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+      }
+}
+.we_can{
+ margin-top: 58px;
+ position: relative;
+ transition: .5s;
+ &::before{
+       position: absolute;
+       height: 20px;
+       width: 20px;
+       border-radius: 50%;
+       background:#353535 ;
+       right: -56px;
+       bottom: 93px;
+       content: "";
+       transition: .5s;
+ }
+ &::after{
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      background:#eeeeee ;
+      right: -14px;
+      bottom: 90px;
+      content: "";
+      transform: rotate(45deg);
+}
+&:hover:before{
+      background: $hover_bg;
+     }
+     &:hover{
+      box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+}
+}
+.we_do{
+      margin-top: 58px;
+      position: relative;
+      transition: .5s;
+      &::before{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background:#353535 ;
+            left: -53px;
+            bottom: 93px;
+            content: "";
+            transition: .5s;
+      }
+      &::after{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background:#eeeeee ;
+            left: -13px;
+            bottom: 90px;
+            content: "";
+            transform: rotate(45deg);
+      }
+      &:hover:before{
+            background: $hover_bg;
+           }
+           &:hover{
+            box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+      }
+}
+.choose_me {
+      margin-top: 70px;
+      position: relative;
+      transition: .5s;
+      &::before{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background:#353535 ;
+            left: 48%;
+            top:-58px;
+            content: "";
+            transition: .5s;
+      }
+      &::after{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background:#eeeeee ;
+            left: 195px;
+            top:-13px;
+            content: "";
+            transform: rotate(45deg);
+      }
+      &:hover:before{
+       background: $hover_bg;
+      }
+      &:hover{
+            box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 5px 25px -2px rgba(0,0,0,0.75);
+      }
+}
+.about_img {
+            margin-left: 12%;
+            position: relative;
+            height: 315px;
+            width: 315px;
+            border-radius: 50%;
+            position: relative;
+            margin-top: 10px;
+           
+            &:before{
+                  position: absolute;
+                  height: 319px;
+                  width: 319px;
+                  border-radius: 50%;
+                  background:$position_bg ;
+                  left: 0;
+                  top: 0;
+                  content: "";
+            }
+            &:after{
+                  position: absolute;
+                  height: 355px;
+                  width: 355px;
+                  border-radius: 50%;
+                  border: 3px solid $position_bg ;
+                  left: -18px;
+                  top: -17px;
+                  content: "";
+                  
+            }
+
+      
+      
+
+      
+      
+}
+      
